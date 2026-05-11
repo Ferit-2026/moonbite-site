@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moonbite</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+    .logo {
+      width: 300px;
+      margin-top: 50px;
+    }
+    h1 {
+      color: red;
+      font-size: 60px;
+      margin: 10px;
+    }
+    .box {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid red;
+      display: inline-block;
+    }
+    a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img class="logo" src="https://i.imgur.com/yourimage.png" />
+
+  <h1>MOONBITE</h1>
+  <p>The Wolf of Solana</p>
+
+  <div class="box">
+    <p>CA:</p>
+    <p>C3RnEFAywC9AH5rbyXmRiyepnqh6NQhHLdHb8ET3Rcqo</p>
+  </div>
+
+  <p>
+    <a href="https://jup.ag" target="_blank">Buy on Jupiter</a>
+  </p>
+
+</body>
+</html>
