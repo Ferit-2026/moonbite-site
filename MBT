@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moonbite</title>
+
   <style>
     body {
       margin: 0;
       background: black;
       color: white;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
+
     .logo {
-      width: 300px;
-      margin-top: 50px;
+      width: 220px;
+      max-width: 80%;
+      margin-top: 40px;
     }
+
     h1 {
       color: red;
-      font-size: 60px;
-      margin: 10px;
+      font-size: 48px;
+      margin: 10px 0;
+      letter-spacing: 2px;
     }
+
+    p {
+      margin: 8px 0;
+      opacity: 0.9;
+    }
+
     .box {
-      margin-top: 30px;
-      padding: 20px;
+      margin-top: 25px;
+      padding: 15px 20px;
       border: 1px solid red;
       display: inline-block;
+      max-width: 90%;
+      word-break: break-word;
     }
+
     a {
+      display: inline-block;
+      margin-top: 20px;
       color: red;
       text-decoration: none;
       font-weight: bold;
+      border: 1px solid red;
+      padding: 10px 16px;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      background: red;
+      color: black;
     }
   </style>
 </head>
 
 <body>
 
-  <img class="logo" src="https://i.imgur.com/yourimage.png" />
+  <!-- Logo (bitte echte URL einsetzen) -->
+  <img
+    class="logo"
+    src="https://i.imgur.com/yourimage.png"
+    alt="Moonbite Logo"
+  />
 
   <h1>MOONBITE</h1>
   <p>The Wolf of Solana</p>
 
   <div class="box">
-    <p>CA:</p>
+    <p><strong>CA:</strong></p>
     <p>C3RnEFAywC9AH5rbyXmRiyepnqh6NQhHLdHb8ET3Rcqo</p>
   </div>
 
-  <p>
-    <a href="https://jup.ag" target="_blank">Buy on Jupiter</a>
-  </p>
+  <br />
+
+  <a href="https://jup.ag" target="_blank" rel="noopener noreferrer">
+    Buy on Jupiter
+  </a>
 
 </body>
 </html>
