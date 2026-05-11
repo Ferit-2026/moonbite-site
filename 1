@@ -1,151 +1,86 @@
-export default function MoonbiteLanding() {
-  const contract = "C3RnEFAywC9AH5rbyXmRiyepnqh6NQhHLdHb8ET3Rcqo";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moonbite</title>
 
-  return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-red-950/40 to-black"></div>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-10">
-        <header className="flex items-center justify-between mb-12">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-wider text-red-500">
-              MOONBITE
-            </h1>
-            <p className="text-zinc-400 mt-2 text-sm md:text-base">
-              The Wolf of Solana
-            </p>
-          </div>
+    .logo {
+      width: 220px;
+      max-width: 80%;
+      margin-top: 40px;
+    }
 
-          <div className="hidden md:flex gap-4">
-            <a
-              href="https://jup.ag"
-              target="_blank"
-              className="bg-red-600 hover:bg-red-500 transition px-5 py-3 rounded-2xl font-bold shadow-lg"
-            >
-              Buy on Jupiter
-            </a>
+    h1 {
+      color: red;
+      font-size: 48px;
+      margin: 10px 0;
+      letter-spacing: 2px;
+    }
 
-            <a
-              href="https://raydium.io"
-              target="_blank"
-              className="border border-red-600 hover:bg-red-600/20 transition px-5 py-3 rounded-2xl font-bold"
-            >
-              Raydium
-            </a>
-          </div>
-        </header>
+    p {
+      margin: 8px 0;
+      opacity: 0.9;
+    }
 
-        <section className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <div className="inline-block bg-red-600/20 border border-red-500 px-4 py-2 rounded-full text-sm mb-6">
-              Solana Meme Token
-            </div>
+    .box {
+      margin-top: 25px;
+      padding: 15px 20px;
+      border: 1px solid red;
+      display: inline-block;
+      max-width: 90%;
+      word-break: break-word;
+    }
 
-            <h2 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-              Bite The <span className="text-red-500">Moon</span>
-            </h2>
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid red;
+      padding: 10px 16px;
+      transition: 0.2s ease;
+    }
 
-            <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-              Moonbite is a community-driven Solana token built for speed,
-              hype and strong wolf-pack energy. Fast trades, growing community
-              and aggressive branding powered by Solana.
-            </p>
+    a:hover {
+      background: red;
+      color: black;
+    }
+  </style>
+</head>
 
-            <div className="flex flex-wrap gap-4 mb-10">
-              <a
-                href="https://jup.ag"
-                target="_blank"
-                className="bg-red-600 hover:bg-red-500 transition px-6 py-4 rounded-2xl font-bold text-lg shadow-xl"
-              >
-                Launch on Jupiter
-              </a>
+<body>
 
-              <a
-                href="https://dexscreener.com"
-                target="_blank"
-                className="border border-zinc-700 hover:border-red-500 hover:bg-red-600/10 transition px-6 py-4 rounded-2xl font-bold text-lg"
-              >
-                View Chart
-              </a>
-            </div>
+  <!-- Logo (bitte echte URL einsetzen) -->
+  <img
+    class="logo"
+    src="https://i.imgur.com/yourimage.png"
+    alt="Moonbite Logo"
+  />
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
-              <p className="text-zinc-400 text-sm mb-2">Official Contract Address</p>
-              <div className="break-all text-red-400 font-mono text-sm md:text-base">
-                {contract}
-              </div>
-            </div>
-          </div>
+  <h1>MOONBITE</h1>
+  <p>The Wolf of Solana</p>
 
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-600 blur-3xl opacity-30 rounded-full"></div>
+  <div class="box">
+    <p><strong>CA:</strong></p>
+    <p>C3RnEFAywC9AH5rbyXmRiyepnqh6NQhHLdHb8ET3Rcqo</p>
+  </div>
 
-              <img
-                src="/mnt/data/MBT.png"
-                alt="Moonbite Logo"
-                className="relative w-[420px] h-[420px] object-contain rounded-full border border-red-700 shadow-2xl"
-              />
-            </div>
-          </div>
-        </section>
+  <br />
 
-        <section className="mt-24 grid md:grid-cols-3 gap-6">
-          <div className="bg-zinc-900/70 border border-zinc-800 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-red-500">Fast</h3>
-            <p className="text-zinc-300 leading-relaxed">
-              Built on Solana for lightning-fast transactions and low fees.
-            </p>
-          </div>
+  <a href="https://jup.ag" target="_blank" rel="noopener noreferrer">
+    Buy on Jupiter
+  </a>
 
-          <div className="bg-zinc-900/70 border border-zinc-800 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-red-500">Community</h3>
-            <p className="text-zinc-300 leading-relaxed">
-              Moonbite grows through its wolf-pack community and loyal holders.
-            </p>
-          </div>
-
-          <div className="bg-zinc-900/70 border border-zinc-800 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-red-500">Liquidity</h3>
-            <p className="text-zinc-300 leading-relaxed">
-              Expanding liquidity pools and trading visibility across Solana DEXs.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-24 text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Join The Pack
-          </h2>
-
-          <p className="text-zinc-400 max-w-2xl mx-auto mb-10 text-lg">
-            Moonbite is building a strong presence across the Solana ecosystem.
-            Follow the project, trade the token and become part of the pack.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-5">
-            <a
-              href="https://x.com"
-              target="_blank"
-              className="bg-zinc-900 border border-zinc-800 hover:border-red-500 hover:bg-red-600/10 transition px-6 py-4 rounded-2xl font-bold"
-            >
-              Twitter / X
-            </a>
-
-            <a
-              href="https://t.me"
-              target="_blank"
-              className="bg-zinc-900 border border-zinc-800 hover:border-red-500 hover:bg-red-600/10 transition px-6 py-4 rounded-2xl font-bold"
-            >
-              Telegram
-            </a>
-          </div>
-        </section>
-
-        <footer className="mt-24 border-t border-zinc-900 pt-8 text-center text-zinc-500 text-sm">
-          © 2025 Moonbite • Powered by Solana
-        </footer>
-      </div>
-    </div>
-  );
-}
+</body>
+</html>
